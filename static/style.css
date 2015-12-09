@@ -15,6 +15,7 @@
   max-width: 940px;
   margin: auto;
   font-family: ClearSans;
+  padding: 35px;
 }
 
 .row-stack {
@@ -44,7 +45,6 @@ a {
 .portfolio-header {
   font-family: Spartan;
   width: 100%;
-  margin: auto;
   justify-content: space-between;
   align-items: center;
 }
