@@ -1,8 +1,14 @@
-/* for placement only font */
 @font-face {
   font-family: 'ClearSans';
-  src: url(ClearSans-Bold.ttf);
+  src: url(ClearSans-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'Spartan';
+  src: url(LeagueSpartan-Bold.otf);
+}
+
+
 
 /* GENERAL */
 #main {
@@ -36,6 +42,7 @@ a {
 
 /* HEADER */
 .portfolio-header {
+  font-family: Spartan;
   width: 100%;
   margin: auto;
   justify-content: space-between;
