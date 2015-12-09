@@ -78,6 +78,10 @@ a {
 }
 
 /* GALLERY */
+.gallery {
+  padding-bottom: 60px;
+}
+
 .gallery-items {
   max-width: 950px;
   margin: auto;
@@ -112,16 +116,37 @@ a {
 .footer-menu {
   display: flex;
   justify-content: center;
+  border-top: 1px solid gray;
+  padding-top: 24px;
 }
 
 .footer-menu li {
   padding: 0 6px;
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  height: 26px;
+  width: 26px;
 }
+
+.footer-menu .linkedin {
+  background-image: url('/static/linkedin.png');
+}
+
+.footer-menu .twitter {
+  background-image: url('/static/twitter.png');
+}
+
+.footer-menu .email {
+  background-image: url('/static/email.png');
+}
+
+
 
 @media (max-width: 600px) {
   /* HEADER */
   .portfolio-menu {
     display: none;
+
   }
 
   .portfolio-menu li, .portfolio-menu a {
