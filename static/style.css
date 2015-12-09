@@ -1,9 +1,54 @@
+/* for placement only font */
 @font-face {
   font-family: 'ClearSans';
   src: url(ClearSans-Bold.ttf);
 }
 
-header {
-  color: red;
+/* GENERAL */
+.row-stack {
+  display: flex;
   font-family: ClearSans;
+}
+
+.col-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+.portfolio-header {
+  align-items: center;
+}
+
+.portfolio-menu {
+  justify-content: space-between;
+  margin: 0;
+}
+.portfolio-title {
+  width: 75%;
+  justify-content: space-between;
+}
+
+.portfolio-nav {
+  width: 25%;
+}
+.portfolio-nav li {
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .portfolio-menu li, .portfolio-menu a {
+    color: white;
+    background: black;
+    text-align: center;
+  }
 }
