@@ -5,4 +5,4 @@ import '../static/style.css';
 import '../static/ClearSans-Bold.ttf';
 import '../static/dancing_drakes.jpg';
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('main'));
