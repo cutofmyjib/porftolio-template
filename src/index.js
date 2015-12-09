@@ -4,6 +4,7 @@ import { App } from './App';
 import '../static/style.css';
 import '../static/ClearSans-Regular.ttf';
 import '../static/LeagueSpartan-Bold.otf';
+import '../static/menu.png';
 import '../static/dancing_drakes.jpg';
 import '../static/pusheen_the_cats.png';
 import '../static/hipster_floral_triangles.jpg';
