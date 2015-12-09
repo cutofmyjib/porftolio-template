@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'ClearSans';
+  src: url(ClearSans-Bold.ttf);
+}
+
+header {
+  color: red;
+  font-family: ClearSans;
+}
