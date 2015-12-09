@@ -9,5 +9,8 @@ import '../static/dancing_drakes.jpg';
 import '../static/pusheen_the_cats.png';
 import '../static/hipster_floral_triangles.jpg';
 import '../static/floral_tea_cups.gif';
+import '../static/linkedin.png';
+import '../static/twitter.png';
+import '../static/email.png';
 
 render(<App />, document.getElementById('main'));
