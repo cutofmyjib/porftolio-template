@@ -17,27 +17,41 @@ class Header extends Component {
   }
 }
 
-
 class Gallery extends Component {
   render() {
-    return (
+    const galleryItems = this.props.url.map(function(url){
+      return <GalleryItem {...url} />
+    });
 
+    return (
+      <section className="gallery">
+        <ul className="gallery-items">
+          {galleryItems}
+        </ul>
+      </section>
     );
   }
 }
 
+class GalleryItem extends Component {
 
+}
 
 
 
 export class App extends Component {
   render() {
-    var options = {
+    var headerOptions = {
       title: "MY PORTFOLIO"
     };
 
+    var galleryOptions = {
+      galleryImgUrls: ["/static/dancing_drakes.jpg"]
+    };
+
     return (
-      <Header {...options}/>
+      <Header {...headerOptions}/>
+      <Gallery {...galleryOptions} />
     );
   }
 }
