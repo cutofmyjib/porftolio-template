@@ -21,7 +21,7 @@ class Gallery extends Component {
   render() {
     // render list items dynamically
     //https://facebook.github.io/react/docs/tutorial.html
-    const galleryItems = this.props.img.map(function(data){
+    var galleryItems = this.props.img.map(function(data){
       return <GalleryItem {...data} />
     });
 
@@ -48,6 +48,20 @@ class GalleryItem extends Component {
   }
 }
 
+class Footer extends Component {
+  render(){
+    return (
+      <footer>
+        <ul className="footer-menu">
+          <li className="linkedin"><a href="#"></a></li>
+          <li className="twitter"><a href="#"></a></li>
+          <li className="email"><a href="#"></a></li>
+        </ul>
+      </footer>
+    );
+  }
+}
+
 export class App extends Component {
   render() {
     var headerOptions = {
@@ -67,6 +81,7 @@ export class App extends Component {
       <div>
         <Header {...headerOptions} />
         <Gallery {...galleryOptions} />
+        <Footer />
       </div>
     );
   }
