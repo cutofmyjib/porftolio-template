@@ -19,8 +19,10 @@ class Header extends Component {
 
 class Gallery extends Component {
   render() {
-    const galleryItems = this.props.galleryImgUrls.map(function(url){
-      return <GalleryItem src={url} />
+    // render list items dynamically
+    //https://facebook.github.io/react/docs/tutorial.html
+    const galleryItems = this.props.img.map(function(data){
+      return <GalleryItem {...data} />
     });
 
     return (
@@ -38,15 +40,13 @@ class GalleryItem extends Component {
     return (
       <li className="gallery-item">
         <a href="#">
-          <img src={this.props.src} className="gallery-item-img"/>
+          <img src={this.props.url} className="gallery-item-img"/>
         </a>
-        <span className="gallery-item-desc">desc</span>
+        <span className="gallery-item-desc">{this.props.desc}</span>
       </li>
     );
   }
 }
-
-
 
 export class App extends Component {
   render() {
@@ -55,7 +55,12 @@ export class App extends Component {
     };
 
     var galleryOptions = {
-      galleryImgUrls: ["/static/dancing_drakes.jpg"]
+      img: [
+        { url: "/static/dancing_drakes.jpg", desc: "description 1" },
+        { url: "/static/floral_tea_cups.gif", desc: "description 2" },
+        { url: "/static/hipster_floral_triangles.jpg", desc: "description 3" },
+        { url: "/static/pusheen_the_cats.png", desc: "description 4" }
+      ]
     };
 
     return (
