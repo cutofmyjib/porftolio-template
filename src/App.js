@@ -19,8 +19,8 @@ class Header extends Component {
 
 class Gallery extends Component {
   render() {
-    const galleryItems = this.props.url.map(function(url){
-      return <GalleryItem {...url} />
+    const galleryItems = this.props.galleryImgUrls.map(function(url){
+      return <GalleryItem src={url} />
     });
 
     return (
@@ -34,7 +34,16 @@ class Gallery extends Component {
 }
 
 class GalleryItem extends Component {
-
+  render() {
+    return (
+      <li className="gallery-item">
+        <a href="#">
+          <img src={this.props.src} className="gallery-item-img"/>
+        </a>
+        <span className="gallery-item-desc">desc</span>
+      </li>
+    );
+  }
 }
 
 
@@ -50,8 +59,10 @@ export class App extends Component {
     };
 
     return (
-      <Header {...headerOptions}/>
-      <Gallery {...galleryOptions} />
+      <div>
+        <Header {...headerOptions} />
+        <Gallery {...galleryOptions} />
+      </div>
     );
   }
 }
