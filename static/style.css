@@ -9,7 +9,6 @@
 }
 
 
-
 /* GENERAL */
 #main {
   max-width: 940px;
@@ -82,6 +81,8 @@ a {
 .active a {
   opacity: 1;
 }
+
+
 /* GALLERY */
 .gallery {
   padding-bottom: 60px;
@@ -113,7 +114,6 @@ a {
   display: inline-block;
   width: 100%;
   text-align: center;
-
 }
 
 
@@ -159,7 +159,6 @@ a {
   /* HEADER */
   .portfolio-menu {
     display: none;
-
   }
 
   .portfolio-menu li, .portfolio-menu a {
