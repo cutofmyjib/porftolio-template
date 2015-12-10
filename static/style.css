@@ -65,18 +65,23 @@ a {
 }
 
 .portfolio-nav li {
+  font-family: ClearSans;
+  font-size: 1em;
   padding: 12px;
   text-align: center;
 }
 
 .portfolio-menu a {
-  color: black;
+  opacity: .25;
 }
 
-.portfolio-menu li:hover {
-  background: gray;
+.portfolio-menu li:hover a {
+  opacity: 1;
 }
 
+.active a {
+  opacity: 1;
+}
 /* GALLERY */
 .gallery {
   padding-bottom: 60px;
@@ -121,12 +126,21 @@ a {
 }
 
 .footer-menu li {
-  padding: 0 6px;
   background-size: 26px 26px;
   background-repeat: no-repeat;
+  margin: 0 12px;
+}
+
+.footer-menu a {
+  display: block;
   height: 26px;
   width: 26px;
 }
+
+.footer-menu li:hover {
+  opacity: .5;
+}
+
 
 .footer-menu .linkedin {
   background-image: url('/static/linkedin.png');
@@ -139,7 +153,6 @@ a {
 .footer-menu .email {
   background-image: url('/static/email.png');
 }
-
 
 
 @media (max-width: 600px) {
