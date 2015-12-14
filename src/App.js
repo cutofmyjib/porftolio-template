@@ -1,37 +1,8 @@
 import React, { Component } from 'react';
 import Header from './header';
+import Gallery from './gallery';
 
 
-class Gallery extends Component {
-  render() {
-    // render list items dynamically
-    //https://facebook.github.io/react/docs/tutorial.html
-    var galleryItems = this.props.img.map(function(data){
-      return <GalleryItem {...data} />
-    });
-
-    return (
-      <section className="gallery">
-        <ul className="gallery-items">
-          {galleryItems}
-        </ul>
-      </section>
-    );
-  }
-}
-
-class GalleryItem extends Component {
-  render() {
-    return (
-      <li className="gallery-item">
-        <a href="#">
-          <img src={this.props.url} className="gallery-item-img"/>
-        </a>
-        <span className="gallery-item-desc">{this.props.desc}</span>
-      </li>
-    );
-  }
-}
 
 class Footer extends Component {
   render(){
