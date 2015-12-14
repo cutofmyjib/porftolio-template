@@ -1,22 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Gallery from './gallery';
-
-
-
-class Footer extends Component {
-  render(){
-    return (
-      <footer>
-        <ul className="footer-menu">
-          <li className="linkedin"><a href="#"></a></li>
-          <li className="twitter"><a href="#"></a></li>
-          <li className="email"><a href="#"></a></li>
-        </ul>
-      </footer>
-    );
-  }
-}
+import Footer from './footer';
 
 export class App extends Component {
   render() {
