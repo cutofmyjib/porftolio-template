@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { App } from './App';
+import Router from 'react-router';
+import routes from './routes';
+
 import '../static/style.css';
 import '../static/ClearSans-Regular.ttf';
 import '../static/LeagueSpartan-Bold.otf';
@@ -13,4 +15,5 @@ import '../static/linkedin.png';
 import '../static/twitter.png';
 import '../static/email.png';
 
-render(<App />, document.getElementById('main'));
+render(routes, document.getElementById('main'));
+
