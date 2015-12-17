@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class Header extends Component {
   render() {
@@ -8,11 +9,12 @@ export default class Header extends Component {
         <nav className="portfolio-nav">
           <ul className="portfolio-menu">
             <li className="active"><a href="#">GALLERY</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li>BLOG</li>
+            <li><Link to="/about">ABOUT</Link></li>
           </ul>
         </nav>
       </header>
     );
   }
 }
+
